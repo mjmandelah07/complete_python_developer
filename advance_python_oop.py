@@ -232,6 +232,7 @@ class HybridBlog(Wizard, Archer):
     def __init__(self, name, power, arrows):
         Archer.__init__(self, name, arrows)
         Wizard.__init__(self, name, power)
+        super().__init__(name, power)
 
 
 # Object introspection- the ability to determine the type of an object at runtime
